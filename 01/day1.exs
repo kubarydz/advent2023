@@ -46,19 +46,6 @@ defmodule Day1 do
   defp mapLetters(<<char, rest::binary>>), do: <<char>> <> mapLetters(rest)
   defp mapLetters(""), do: ""
 
-  #  defp mapLetters1(str) do
-  #    str
-  #    |> String.replace(~r/one/, "1" <> "e")
-  #    |> String.replace(~r/two/, "2" <> "o")
-  #    |> String.replace(~r/three/, "3" <> "e")
-  #    |> String.replace(~r/four/, "4")
-  #    |> String.replace(~r/five/, "5" <> "e")
-  #    |> String.replace(~r/six/, "6")
-  #    |> String.replace(~r/seven/, "7" <> "n")
-  #    |> String.replace(~r/eight/, "8" <> "t")
-  #    |> String.replace(~r/nine/, "9")
-  #  end
-
   defp firstLastCombine(str) do
     first = String.first(str)
     last = String.last(str)
