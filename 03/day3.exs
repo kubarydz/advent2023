@@ -1,9 +1,9 @@
 defmodule Day3 do
   def load do
-    {:ok, testInput} = File.read("test")
+    testInput = File.read!("test")
     part1(testInput)
     part2(testInput)
-    {:ok, input} = File.read("input")
+    input = File.read!("input")
     part1(input)
     part2(input)
   end
